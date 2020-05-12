@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var index = 0
     let flavors = ["Vanilla","Chocolate","Coconut","Green Tea","Butter Pecan","Hazelnut"]
     
-    @IBAction func changeFlavor(_ sender: UIButton) {
+    @IBAction func changeFlavor(sender: UIButton) {
         index = (index + 1) % flavors.count
         image.image = UIImage(named: flavors[index])
         flavorName.text = flavors[index]
